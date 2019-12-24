@@ -1,0 +1,421 @@
+
+* {
+    margin:0;
+    padding:0;
+}
+
+* {box-sizing: border-box;}
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+html {
+    overflow-y:scroll;
+}
+
+body {
+    line-height: 1;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+p {
+    margin:0 0 1em 0;
+    font-family: 'Tangerine', serif;
+}
+
+li {
+    list-style-type:none;
+}
+
+ol, ul {
+    list-style: none;
+    list-style-type: none;
+}
+
+img {
+    border:0;
+}
+
+
+/* 全体 */
+
+#wrapper {
+    width:100%;
+    overflow:hidden;
+}
+
+
+/* header */
+
+.header-nav {
+    margin: 30px;
+}
+
+.header-nav-left {
+    padding-left: 90px;
+}
+
+.header-nav-left-list h1 {
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.header-nav-left-list p {
+    font-size: 15px;
+}
+
+.nav-ul li {
+    float: left;
+    margin-left: 25px;
+}
+
+.nav-ul a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav-ul-button {
+    border:  #003399 2px solid;
+    border-radius: 100px;
+}
+
+
+/* main-container */
+
+.main-content {
+    margin-left: 115px;
+    margin-right: 115px;
+}
+
+.main-content-title h1 {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.card-body-title h1 {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.card-body-title p {
+    font-size: 0.5em;
+    letter-spacing: 1px;
+    line-height: 180%;
+}
+
+.card-body-title-fa {
+    color: grey;
+}
+
+.main-content-btn a{
+    color: white;
+    background-color: #003399;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+
+/* return-btn */
+#page_top {
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+}
+#page_top a {
+    background-color: white;
+    color: #003399;
+    text-align: center;
+    text-decoration: none;
+    padding: 18px 18px;
+    border-radius: 10px;
+    border: black 1px solid;
+}
+#page_top a:hover {
+    text-decoration: none;
+}
+
+
+/* sub-footer */
+
+.footer-ul {
+    background-color: #EEEEEE;
+    height: 60px;
+    padding-top: 10px;
+    padding-left: 115px;
+    margin-top: 110px;
+}
+
+.footer-ul-li li {
+    float: left;
+
+}
+
+.footer-ul-li a {
+    color: black;
+    text-decoration: none;
+}
+
+
+/* footer */
+
+footer {
+    background-color: #444444;
+    height: 50px;
+}
+
+.footer-left {
+    padding-left: 135px;
+}
+
+.footer-left-text {
+    color: white;
+}
+
+.footer-fa-icon {
+    padding-left: 75px;
+}
+
+.footer-fa-color {
+    color: white;
+}
+
+
+
+/* レスポンシブ */
+
+/* 今回はiPhone6/7/8とiPadのレスポンシブを作成しました。それ以外のレスポンシブ対応の変更も可能です。 */
+
+
+
+@media (max-width: 575.98px) {
+
+    .header-nav-left {
+        padding-left: 10px;
+    }
+
+    .header-nav-left-list h1 {
+        text-align: center;
+    }
+
+    .header-nav-left-list p {
+        font-size: 13px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .main-img {
+        margin-top: 25px;
+    }
+
+    .main-img img{
+        width: 320px;
+    }
+
+    .card-left {
+        width: 100%;
+    }
+
+    .main-content {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .main-content-title {
+        margin-left: 5px;
+    }
+
+    .main-content-btn {
+        margin-top: 30px;
+    }
+
+    .footer-ul {
+        height: 80px;
+        margin-top: 60px;
+        padding-left: 60px;
+    }
+
+    footer {
+        height: 80px;
+    }
+
+    .footer-left {
+        padding-left: 100px;
+        text-align: center;
+    }
+
+    .footer-left-text {
+        height: 15px;
+        width: 200px;
+    }
+
+    .footer-fa-icon {
+        padding-left: 140px;
+    }
+
+}
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    .header-nav-left {
+        padding-left: 10px;
+    }
+
+    .header-nav-left-list p {
+        font-size: 10px;
+    }
+
+    .main-img {
+        margin-top: 30px;
+    }
+
+    .main-img img {
+        width: 300px;
+    }
+
+    .main-content {
+        margin-left: 15px;
+    }
+
+    footer {
+        height: 80px;
+    }
+
+    .footer-ul {
+        padding-left: 0px;
+    }
+
+    .footer-left {
+        padding-left: 0px;
+    }
+
+    .footer-left-text {
+        width: 200px;
+    }
+
+    .footer-fa-icon {
+        padding-left: 134px;
+    }
+
+    .footer-left {
+        padding-left: 99px;
+    }
+
+    .mobile-row {
+        margin: 0;
+        display: block;
+    }
+
+
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    .header-nav-left {
+        padding-left: 50px;
+    }
+
+    .header-nav-left-list {
+        margin-top: 8px;
+    }
+
+    .header-nav-left-list p {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+    .main-img {
+        margin-top: 30px;
+    }
+
+    .main-img img {
+        width: 600px;
+    }
+
+    .main-content {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    footer {
+        height: 70px;
+    }
+
+    .footer-ul {
+        margin-top: 30px;
+        padding-left:40px;
+    }
+
+    .footer-left {
+        padding-top: 10px;
+        padding-left: 60px;
+        padding-right: 0;
+    }
+
+    .footer-fa-icon {
+        padding-top: 10px;
+        padding-left: 30px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+
+@media (min-width: 1200px) {
+}
+
